@@ -1,0 +1,7 @@
+/Users/npmac/Documents/GitHub/CC2025/makerWorkshopTest/build/core/api/IPAddress.cpp.o: \
+ /Users/npmac/Library/Arduino15/packages/arduino/hardware/samd/1.8.14/cores/arduino/api/IPAddress.cpp \
+ /Users/npmac/Library/Arduino15/packages/arduino/hardware/samd/1.8.14/cores/arduino/api/IPAddress.h \
+ /Users/npmac/Library/Arduino15/packages/arduino/hardware/samd/1.8.14/cores/arduino/api/Printable.h \
+ /Users/npmac/Library/Arduino15/packages/arduino/hardware/samd/1.8.14/cores/arduino/api/String.h \
+ /Users/npmac/Library/Arduino15/packages/arduino/hardware/samd/1.8.14/cores/arduino/api/deprecated-avr-comp/avr/pgmspace.h \
+ /Users/npmac/Library/Arduino15/packages/arduino/hardware/samd/1.8.14/cores/arduino/api/Print.h
