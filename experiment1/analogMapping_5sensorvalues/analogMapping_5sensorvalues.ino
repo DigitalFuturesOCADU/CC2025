@@ -6,10 +6,10 @@ OCADU DIGF-6037 Creation & Computation - taught by Kate Hartman & Nick Puckett
 The value of 5 sensors is mapped to the brightness of 5 LEDs.
 */
 
-const int numInputs = 5;
+int numInputs = 5;
 
 // Analog input pins
-const int analogInputPins[] = { A0, A1, A2, A3, A4 };
+int analogInputPins[] = { A0, A1, A2, A3, A4 };
 
 // LED output pins
 int ledPins[] = { 2, 3, 4, 5, 6 };
