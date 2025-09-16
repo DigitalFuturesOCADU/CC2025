@@ -18,7 +18,7 @@ int sensor_pin = A0;        // Analog input pin for the pressure sensor
 int first_led_pin = 2;      // Digital pin for the first LED (LEDs will use pins 2-7)
 int min_pressure = 0;       // Minimum pressure value (no force applied)
 int max_pressure = 1023;    // Maximum pressure value (adjust based on your sensor)
-int num_leds = 6;     // Number of LEDs used for the pressure meter display
+const int num_leds = 6;     // Number of LEDs used for the pressure meter display
 
 // Step 2: Define variables to store data.
 // We use an array to store the LED pin numbers for easy access.
