@@ -59,19 +59,20 @@ void loop()
 // blinkTime = how fast it is blinking (milliseconds)
 // beginState = determines whether its starting state is ON or OFF
 bool blink(int blinkTime, bool beginState) {
+  // Define the boolean variable we will return
+  bool ledShouldBeOn = false;
+  
   // Calculate current position in blink cycle
   unsigned long currentTime = millis() % blinkTime;
   
-  // Determine if we're in the first or second half of the cycle
-  bool isFirstHalf;
-  if(currentTime < (blinkTime / 2))
-  {
-    isFirstHalf = true;
+  // Determine LED state based on timing and beginState
+  if(currentTime < (blinkTime / 2)) {
+    // We're in the first half of the cycle
+    ledShouldBeOn = beginState;  // LED matches beginState in first half
+  } else {
+    // We're in the second half of the cycle  
+    ledShouldBeOn = !beginState; // LED is opposite of beginState in second half
   }
-  else {
-    isFirstHalf = false;
-  }
- 
-  // If beginState is true, LED is on in first half; if false, it's on in second half
-  return beginState ? isFirstHalf : !isFirstHalf;
+  
+  return ledShouldBeOn;
 }
