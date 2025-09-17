@@ -63,6 +63,10 @@ bool blink(int blinkTime, bool beginState) {
   bool ledShouldBeOn = false;
   
   // Calculate current position in blink cycle
+  // Using modulo (%) to get remainder when dividing current time by blink time
+  // millis() keeps counting up continuously (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11...)
+  // millis() % blinkTime creates a repeating pattern (0, 1, 2, 3, 4...497, 498, 499, 0, 1, 2, 3...)
+  // This gives us a way to know where we are within each blink cycle
   unsigned long currentTime = millis() % blinkTime;
   
   // Determine LED state based on timing and beginState
