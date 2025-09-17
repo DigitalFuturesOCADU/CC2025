@@ -8,7 +8,7 @@ The sensor value is mapped to light up a corresponding number of LEDs (from 0 to
 This helps visualize pressure levels and understand sensor mapping.
 
 
-*/
+*/ñ
 
 // Startup Steps:
 // Step 1: Define the pin numbers and constants.
